@@ -42,20 +42,20 @@ sub.<your.domain> {
 Environment="WHITE_LIST=127.0.0.1/8"
 ```
 
-Необходимо перезагрузить caddy:
+Необходимо перезагрузить `caddy`:
 ```shell
 systemctl daemon-reload
 systemctl restart caddy
 ```  
 
 ### envip
-Добавление бинарника:
+Установка бинарника:
 ```shell
 mkdir /opt/envip
 wget https://github.com/fruworg/envip/raw/main/envip -O /opt/envip/envip
 ```
 
-Добавление демона systemd:
+Установка systemd-демона `envip`:
 ```shell
 wget https://raw.githubusercontent.com/fruworg/envip/main/envip.service -O /etc/systemd/system/envip.service
 ```
