@@ -64,4 +64,3 @@ wget https://raw.githubusercontent.com/fruworg/envip/main/envip.service -O /etc/
 ```shell
 systemctl enable --now envip
 ```
-`````
