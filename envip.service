@@ -1,0 +1,12 @@
+[Unit]
+Description=envip
+After=caddy.service
+Requires=caddy.service
+
+[Service]
+ExecStart=/opt/envip/envip
+WorkingDirectory=/opt/envip
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
