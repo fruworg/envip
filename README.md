@@ -36,7 +36,6 @@ sub.<your.domain> {
         reverse_proxy localhost:50001
 }
 ```
-```
 
 В `caddy.service` необходимо добавить следующую строку в секцию `[Service]`:
 ```sh
